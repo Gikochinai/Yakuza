@@ -1,0 +1,127 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("backgroundimg/background1.png") fixed center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation-name: FadeIn;
+  animation-duration: 2s;
+}
+
+.MusicClass p{
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  top: 95px;
+  left: 1260px;
+}
+.Audio-button{
+  background-color: #c6baad;
+  height: 50px;
+  width: 50px;
+  border-radius: 60%;
+  position: absolute;
+  top: 80px;
+  left: 1400px;
+}
+.Audio-button img{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 12px;
+  min-height: 20px;
+  width: 25px;
+}
+#body-course{
+  background: url("backgroundimg/background2.jpg") fixed center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#body-about{
+  background: url("backgroundimg/background3.jpg") fixed center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Main-menu {
+  text-align: right;
+  background-color: #171413;
+}
+
+
+@keyframes FadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(-50px);
+  }to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Main-menu ul{
+  display:inline-flex;
+  list-style: none;
+  text-align: center;
+}
+
+#active a{
+  color: white;
+}
+
+.Ann img{
+  margin-top: 250px;
+  height: 400px;
+  min-width: 200px;
+}
+.Main-menu ul li a:hover{
+  color: white;
+}
+
+.Main-menu ul li {
+  width: 160px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Main-menu ul li a{
+  text-decoration: none;
+  color:  #c6baad;
+  text-transform: uppercase;
+}
+
+.logo{
+  display:inline-flex;
+  position: absolute;
+  left: 20px;
+  top: -11px;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo img{
+    padding: 15px;
+    height: 80px;
+    width: 80px;
+    border-radius: 60%;
+}
+
+.note{
+  margin-left: 500px;
+  margin-top: -1px;
+  width: 300px;
+  background-color: black;
+}
+.note h4{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
