@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Course</title>
+    <link rel="shortcut icon" type="image\png" href="backgroundimg/Persona 5 logo.png">
+  </head>
+  <body id="body-course">
+    <header>
+      <div class="Main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="active"><a href="course.html">Course</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="backgroundimg/Ann.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="Audio-button">
+      <img src="backgroundimg/Playbtn.png" alt="" id="Audio">
+      <div class="MusicClass">
+        <p>Click here to listen</p>
+        <audio id="Persona5" loop>
+            <source src="audio/Music2.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+    <div class="title-page">
+      <h4>Overview (HTML)</h4>
+    </div>
+    <div class="wrapper">
+      <div class="Content">
+        <h4>HTML</h4>
+        <ul id="sub-list">
+           <li>What is HTML?
+             <ul>
+               <li>HTML stands for Hypertext Markup Language.</li>
+               <li>Document-layout and hyperlink-specification language used to create web pages.</li>
+               <li>Unlike a scripting or programming language that uses scripts to perform functions, a markup language uses tags to identify content.</li>
+             </ul>
+           </li>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Basic HTML Document Structure</h4>
+        <ul id="sub-list">
+          <li>The HTML Tag
+            <ul>
+              <li>Defines the root of an HTML document.</li>
+              <li>Although various version has been released over the years, HTML basics remain the same.</li>
+              <li>These tags, like the bread in a sandwich, should surround everything that is written using the HTML language</li>
+            </ul>
+          </li>
+          <li>The HEAD Tag
+            <ul>
+              <li>Defines information about the document, including metadata and scripts.</li>
+              <li>The head of an HTML file contains all of the non-visual elements that help make the page work.</li>
+            </ul>
+          </li>
+          <li>The BODY Tag
+            <ul>
+              <li>Defines the document’s actual code body.</li>
+              <li>Usually follows the HEAD tag.</li>
+              <li>All visual-structural elements are contained within the tag pair, such as headings, paragraphs, lists, quotes, images, and links</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="Button-section">
+        <div class="btn-1">
+          <a href="JavaScript.html">JavaScript Course</a>
+        </div>
+        <div class="btn-2">
+             <a href="CSS.html">CSS Course</a>
+        </div>
+        <div class="btn-3">
+          <a href="Csharp.html">C# Course</a>
+        </div>
+        <div class="btn-4">
+           <a href="Java.html">Java Course</a>
+        </div>
+      </div>
+    </div>
+    <script src="audio.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Course</title>
+    <link rel="shortcut icon" type="image\png" href="backgroundimg/Persona 5 logo.png">
+  </head>
+  <body id="body-course">
+    <header>
+      <div class="Main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="active"><a href="course.html">Course</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="backgroundimg/Ann.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="Audio-button">
+      <img src="backgroundimg/Playbtn.png" alt="" id="Audio">
+      <div class="MusicClass">
+        <p>Click here to listen</p>
+        <audio id="Persona5" loop>
+            <source src="audio/Music2.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+    <div class="title-page">
+      <h4>Introduction to JavaScript</h4>
+    </div>
+     <div class="wrapper">
+       <div class="Content">
+         <h4>What is JavaScript?</h4>
+         <ul>
+           <li>It is considered as one of the most popular programming languages today.</li>
+           <li>It is used for webpage functionality, such as interactivity, data processing, and development of purpose-built applications such as mobile and desktop apps, games, and more.</li>
+         </ul>
+       </div>
+
+       <div class="Content">
+         <h4>Adding JavaScript to a Web Page</h4>
+         <ul>
+           <li id="sub-list">Writing Scripts in the Heading
+           <ul>
+             <li>JS uses the SCRIPT tag pair.</li>
+             <li>JS scripts are usually written within the HEAD tag pair of an HTML document.</li>
+           </ul>
+           </li>
+           <li id="sub-list">Writing Scripts in the Document Body
+             <ul>
+               <li>Alternatively, developers can also write JS scripts within the BODY tag pair in an HTML document via the SCRIPT tag pair.</li>
+               <li>There is no difference between scripts written in the heading and scripts written in the document body.</li>
+             </ul>
+           </li>
+           <li id="sub-list">The SCRIPT Tag
+             <ul>
+               <li>An HTML tag pair used to implement JS scripts into HTML documents.</li>
+               <li>The tags denote that the code within is a JS script.</li>
+               <li>Can take on two (2) main attributes: type and language. They specify the script’s text type and the programming language, respectively.</li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+       <div class="Content">
+         <h4>External JavaScript</h4>
+         <ul>
+           <li>Scripts that are written and placed in external files.</li>
+           <li>External files have the file extension .js for JavaScript.</li>
+           <li>HTML documents can call on these files to execute their script/s using the SRC attribute of the SCRIPT tag.</li>
+           <li>External JS files don’t use the SCRIPT tag pair as part of their code; developers can directly write their script code on the file as if it’s a normal text file.
+           </li>
+           <ul id="sub-list">
+             <li>Advantages of External Scripting
+               <ul>
+                 <li>Code Separation – It separates HTML and JS code completely by having the script code written in a separate file.</li>
+                 <li>Code Maintenance – Due to being written in two (2) separate files, allows better readability and maintainability of both HTML and JS code.</li>
+                 <li>Faster Page Loading – JS files are cached, speeding up loading times for web pages.</li>
+               </ul>
+             </li>
+           </ul>
+         </ul>
+       </div>
+
+       <div class="Content">
+         <h4>Comments in JavaScript</h4>
+         <ul>
+           <li>Code in JS that is not “executed”; they are ignored and do not have any effect on the web page.</li>
+           <li>They are used to describe and explain what the code is doing.</li>
+           <li>They are written after a double forward slash (//) or between pairs of asterisks and forward slashes (/* and */).</li>
+           <li>Single-line comments used double forward slashes, while the asterisk-forward slash pair is used for multi-line comments.</li>
+         </ul>
+       </div>
+
+       <div class="Button-section">
+         <div class="btn-1">
+           <a href="HTML.html">HTML Course</a>
+         </div>
+         <div class="btn-2">
+              <a href="CSS.html">CSS Course</a>
+         </div>
+         <div class="btn-3">
+           <a href="Csharp.html">C# Course</a>
+         </div>
+         <div class="btn-4">
+            <a href="Java.html">Java Course</a>
+         </div>
+       </div>
+     </div>
+
+
+
+
+
+
+   <script src="audio.js" charset="utf-8"></script>
+  </body>
+</html>

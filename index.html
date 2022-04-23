@@ -2,12 +2,20 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Yakuza</title>
     <link rel="shortcut icon" type="image\png" href="backgroundimg/Persona 5 logo.png">
   </head>
   <body>
-    <header>
+    <header class="header-navbar">
       <div class="Main-menu">
         <ul>
           <li id="active"><a href="index.html">Home</a></li>
@@ -16,9 +24,29 @@
         </ul>
       </div>
       <div class="logo">
-        <a href="index.html"><img src="backgroundimg/Ann.jpg" alt=""></a>
+        <img src="backgroundimg/Ann.jpg" id="show-model" alt="">
       </div>
     </header>
+
+    <div id="overlay">
+      <div class="model">
+        <div class="header">
+          <img src="backgroundimg/close-img.png" alt="" id="close-model-btn" class="Close-btn">
+        </div>
+        <div class="Ann-takamaki-img">
+            <img src="backgroundimg/Ann-takamaki-panther.png" id="show-model" alt="">
+            <p>Ann takamaki</p>
+        </div>
+        <div class="text-popup">
+          <h4>Persona: Carmen</h4>
+          <h4>Profile:</h4>
+          <p>Ann is a second year high schooler at Shujin Academy. Ann is the classmate of the protagonist in 2-D, and she and Ryuji Sakamoto were classmates in middle school. Due to her foreign blood and living abroad before the story, she does not have many friends there and is considered an outcast in Shujin.</p>
+        </div>
+        <div class="footer">
+
+        </div>
+      </div>
+    </div>
 
    <div class="Ann">
      <img src="persona 5 ann takamaki text box/Ann-Welcome back Joker!.png" alt="">
@@ -26,14 +54,16 @@
 
     <div class="Audio-button">
       <img src="backgroundimg/Playbtn.png" alt="" id="Audio">
-    </div>
-    <div class="MusicClass">
-      <p>Click here to listen</p>
-      <audio id="Persona5" loop>
-          <source src="audio/Music.mp3" type="audio/mp3">
-      </audio>
+      <div class="MusicClass">
+        <p>Click here to listen</p>
+        <audio id="Persona5" loop>
+            <source src="audio/Music.mp3" type="audio/mp3">
+        </audio>
+      </div>
     </div>
 
+
    <script src="audio.js" charset="utf-8"></script>
+   <script src="popup.js" charset="utf-8"></script>
   </body>
 </html>

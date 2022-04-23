@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>C# Course</title>
+    <link rel="shortcut icon" type="image\png" href="backgroundimg/Persona 5 logo.png">
+  </head>
+  <body id="body-course">
+    <header>
+      <div class="Main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="active"><a href="course.html">Course</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="backgroundimg/Ann.jpg" alt=""></a>
+      </div>
+    </header>
+
+    <div class="Audio-button">
+      <img src="backgroundimg/Playbtn.png" alt="" id="Audio">
+      <div class="MusicClass">
+        <p>Click here to listen</p>
+        <audio id="Persona5" loop>
+            <source src="audio/Music2.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+    <div class="title-page">
+      <h4>C# Basic Concepts</h4>
+    </div>
+    <div class="wrapper">
+      <div class="Content">
+        <h4>What is C#?</h4>
+        <ul>
+          <li>It is an elegant object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework.</li>
+          <li>It can be used to create Windows applications, Web services, mobile applications, client- server applications, database applications, and much, much more.</li>
+          <ul id="sub-list">
+            <li>The .NET Framework
+              <ul>
+                <li>A framework that consists of two (2) parts:
+                  <ul id="list-style">
+                    <li>The Common Language Runtime (CLR) is the foundation of the .NET Framework. It manages code at execution time, providing core services such as memory management, code accuracy, and many other aspects of your code.</li>
+                    <li>The Class Library is a collection of classes, interfaces, and value types that enable you to accomplish a range of common programming tasks, such as data collection, file access, and working with text.</li>
+                  </ul>
+                </li>
+                <li>C# programs particularly use the .NET Framework class library extensively to do common tasks and provide various functionalities.</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Variables</h4>
+        <ul>
+          <li>Allows programs to use data for performing tasks.</li>
+          <li>Reserves a memory location (a space in memory) for storing values.</li>
+          <li>Information stored in the location can be changed while the program is running, hence its name.</li>
+          <li>To use them, they must first be declared by specifying a name and a data type.
+            <ul id="list-style">
+              <li>Variable names, also known as identifiers, can contain letters, numbers, and the underscore character ( _ ); identifiers can only start with a letter or underscore.</li>
+              <li>Although the name of a variable can be any set of letters and numbers, the best identifier is descriptive of the data it will contain; this is very important in order to create clear, understandable and readable code.</li>
+            </ul>
+          </li>
+          <ul id="sub-list">
+            <li>Variable Types
+              <ul>
+                <li>Also known as data types.</li>
+                <li>They define the information that can be stored within a variable, the size of the needed memory and the operations that can be performed with the variable.</li>
+              </ul>
+            </li>
+            <li>Built-in Data Types in C#
+              <ul>
+                <li>int – used for whole numbers</li>
+                <li>float – used for decimal numbers and floating-point numbers</li>
+                <li>double – used for larger values than the float data type can accommodate</li>
+                <li>char – used for a single alphanumeric character</li>
+                <li>bool – used to variables that accept only Boolean values: True or False</li>
+                <li>string – used for saving sequences of characters</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Printing Text</h4>
+        <ul>
+          <li>Text (such as those found instring values) can be displayed on the console window via the Console.Write() or Console.WriteLine() methods.
+            <ul id="list-style">
+              <li>Console.Write() will continue to print text in the same line so long as the method is continuously called.</li>
+              <li>Console.WriteLine() ends its printed text with a line terminator, which moves the cursor to the next line; similar subsequent methods will print their text in their own respective lines.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Getting User Input</h4>
+        <ul>
+          <li>Users can be prompted to enter data using the Console.ReadLine() method.</li>
+          <li>Entered input is assigned to a string variable.</li>
+          <li>Input values can be converted into other data types using the Convert.ToXXX method (where XXX is the .NET name of the data type that the value will be converted into).
+          <ul id="list-style">
+            <li>Convert.ToDouble will convert the string input into double data type values.</li>
+            <li>Convert.ToBoolean will convert input into Boolean values.</li>
+            <li>Convert.ToInt16, Convert.ToInt32 and Convert.ToInt64 converts input to integer values based on specified bit size of the integer (16-bit, 32-bit, and 64-bit, respectively).</li>
+          </ul></li>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Comments</h4>
+        <ul>
+          <li>Explanatory statements that you can include in a program to benefit the reader of your code.</li>
+          <li>The compiler ignores everything that appears in the comment, so none of the comment’s contents affect the result.</li>
+          <li>A comment beginning with two slashes (//) is called a single-line comment. The slashes tell the compiler to ignore everything that follows, until the end of the line.</li>
+          <ul id="sub-list">
+            <li>Multi-Line Comments
+              <ul>
+                <li>Comments that require multiple lines.</li>
+                <li>Denoted by the symbols /* at the beginning of the comment block, and end with */ at the end of the comment block.</li>
+                <li>They can be placed on the same line or inserted with one or more lines between them.</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>The var Keyword</h4>
+        <ul>
+          <li>A handy C# alternative function that enables the compiler to determine the type of the variable automatically based on the expression it is assigned to.</li>
+          <li>Any resulting value that uses this function adapts its respective data type without manual declaration.</li>
+          <li>Variables declared using the keyword are called implicitly-typed variables.</li>
+          <li>Implicitly typed variables MUST have a value upon initialization; any other method of initialization may cause an error.</li>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Constants</h4>
+        <ul>
+          <li>Used to store a value that CANNOT be changed after their initial assignment.</li>
+          <li>Uses the const modifier for its declaration.</li>
+          <li>Useful for storing values that are unchanging or consistent (such as days of the week, or the value of pi).</li>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Arithmetic Operators</h4>
+        <ul>
+          <li>Symbols that perform manipulations on specified values.</li>
+          <li>Most operators are mostly arithmetic or logical by nature.</li>
+          <ul id="sub-list">
+            <li>Supported Operators</li>
+            <img src="backgroundimg/Supported Operators.png" alt="">
+            <li>The Division Operator (/)
+              <ul>
+                <li>Divides the first operand by the second operand.</li>
+                <li>Any remainder is dropped in order to return an integer value.</li>
+              </ul>
+            </li>
+            <li>The Modulus Operator (%)
+              <ul>
+                <li>Informally known as the remainder operator.</li>
+                <li>Returns the remainder of an integer division instead of the actual resulting value.</li>
+              </ul>
+            </li>
+            <li>Operator Precedence
+              <ul>
+                <img src="backgroundimg/Operator Precedence.png" alt="">
+                <li>Determines the grouping of terms in an expression, which affects the sequence in which an expression is evaluated.</li>
+                <li>Certain operators take higher precedence over others; for example, the multiplication operator has higher precedence than the addition operator.</li>
+                <li>Usage of parentheses (( )) can alter the precedence of operators in any given expression: Operations within parentheses are performed first; if there are parenthetical expressions nested within one another, the expression within the innermost parentheses is evaluated first.</li>
+                <li>Operator precedence in programming follows the same rules of precedence in general mathematics.</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="Content">
+        <h4>Assignment and Increment Operators</h4>
+        <ul id=sub-list>
+          <li>Assignment Operators
+            <ul>
+              <li>Assigns the value on the right side of the operator to the variable on the left side.</li>
+              <li>Denoted by the equal sign (=).</li>
+              <li>C# also provides Compound Assignment Operators that perform an operation and an assignment in one statement; this is usually done by adding the appropriate arithmetic operator before the equal sign</li>
+            </ul>
+          </li>
+          <li>The Increment Operator (++)
+            <ul>
+              <li>Used to increase an integer's value by one (1)</li>
+              <li>It is considered as one of the most commonly used C# operators.</li>
+            </ul>
+          </li>
+          <li>Increment Prefix and Postfix
+            <ul>
+              <li>The increment operator has two (2) forms:
+                <ul id="list-style">
+                  <li>The prefix form increments the value, and then proceeds with the expression; it is written by placing the increment operator BEFORE the variable to be incremented.</li>
+                  <li>The postfix form evaluates the expression and then performs the incrementing; it is written by placing the increment operator AFTER the variable to be incremented.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>The Decrement Operator (--)
+            <ul>
+              <li>Works in much the same way as the increment operator, but instead of increasing the value, it decreases it by one (1).</li>
+              <li>Also follows the increment operator’s rules for prefix and postfix.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="Button-section">
+        <div class="btn-1">
+          <a href="JavaScript.html">JavaScript Course</a>
+        </div>
+        <div class="btn-2">
+             <a href="HTML.html">HTML Course</a>
+        </div>
+        <div class="btn-3">
+          <a href="CSS.html">CSS Course</a>
+        </div>
+        <div class="btn-4">
+           <a href="Java.html">Java Course</a>
+        </div>
+      </div>
+    </div>
+    <script src="audio.js" charset="utf-8"></script>
+  </body>
+</html>
